@@ -33,4 +33,3 @@ the pinned framework (including LGPL-2.1-or-later and Apache-2.0 components).
 PlatformIO/toolchain/build tools retain their package licenses. Before binary
 distribution, inventory all linked components and satisfy their source and
 notice obligations. M1 creates development artifacts, not a binary release.
-

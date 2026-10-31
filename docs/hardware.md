@@ -70,4 +70,3 @@ Expected configuration: ESP32-S3R8, 16 MB flash, 8 MB octal PSRAM, ST7789
 
 Record results with unit/revision, source commit, instrument/setup, measured
 values, pass/fail and logs. No unchecked item is implied to pass by a build.
-

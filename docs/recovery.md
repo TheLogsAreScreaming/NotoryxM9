@@ -24,4 +24,3 @@ Before a separately approved M2 flash:
 
 Keep keyboard firmware and LR1110 internal firmware updates out of initial
 bring-up. No autoformat, mass erase, OTA or production release in M1.
-

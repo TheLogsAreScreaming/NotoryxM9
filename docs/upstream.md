@@ -24,4 +24,3 @@ mobile notification code. Do not copy Flutter plugins, rendering or keychains.
 Preserve the MeshCore MIT notice for board-derived configuration. Future imports
 must carry their own notices; do not assume all dependencies or artwork have the
 same license. Factory Ripple application source/assets are not imported.
-

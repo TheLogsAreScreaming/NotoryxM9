@@ -61,4 +61,3 @@ class SpiBus {
   bool active_ = false;
 };
 }  // namespace notoryx
-

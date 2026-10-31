@@ -63,4 +63,3 @@ static_assert(M9Pins::radioIrq != M9Pins::radioBusy, "IRQ and BUSY differ");
 static_assert(M9Pins::radioCs != M9Pins::lcdCs && M9Pins::radioCs != M9Pins::sdCs &&
               M9Pins::lcdCs != M9Pins::sdCs, "SPI chip selects must be distinct");
 }  // namespace notoryx
-

@@ -29,4 +29,3 @@ Revision mismatch is gated by explicit evidence. SPI contention needs measured
 transfer budgets. Persistence needs atomic/versioned records and no automatic
 format. Sleep requires reception/wake verification. Signing needs byte fixtures
 and cross-tests. Build success is not a radio or battery-life result.
-

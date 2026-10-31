@@ -56,4 +56,3 @@ contains build-only tooling. Hardware adapters, mesh services, UI and storage
 will be introduced in their respective milestones rather than empty stubs.
 
 This is an independent project, not an official Elecrow or MeshCore release.
-

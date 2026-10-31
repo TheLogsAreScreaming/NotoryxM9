@@ -59,4 +59,3 @@ signing input, 101-byte encoding, and out-of-order text/signature handling.
 Convert test vectors from the pinned app revision and cross-test on air.
 Queued, sent, acknowledged and expired are different states; channel sends
 never imply every recipient received the message.
-

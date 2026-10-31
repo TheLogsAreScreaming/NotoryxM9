@@ -8,4 +8,3 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
   target_compile_options(foundation_tests PRIVATE -Wall -Wextra -Werror -pedantic)
 endif()
 add_test(NAME foundation COMMAND foundation_tests)
-

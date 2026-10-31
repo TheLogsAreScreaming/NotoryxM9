@@ -23,4 +23,3 @@ out = root / "build/reports"
 out.mkdir(parents=True, exist_ok=True)
 (out / "build.json").write_text(json.dumps(report, indent=2) + "\n")
 print(json.dumps(report, indent=2))
-
