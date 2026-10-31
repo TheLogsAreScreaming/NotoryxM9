@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "status": "reference revisions; no MeshCore runtime linked in M1",
+  "sources": {
+    "meshcore": {
+      "repository": "https://github.com/meshcore-dev/MeshCore",
+      "commit": "81dbae592ffad40b4212bc0b37e82b38da08f4bc",
+      "license": "MIT",
+      "usage": "board build configuration adapted; runtime planned for M3"
+    },
+    "radiolib": {
+      "repository": "https://github.com/jgromes/RadioLib",
+      "commit": "6d8934836678d8894e3d556550475b37dce3e2b6",
+      "usage": "selected to match MeshCore; not linked"
+    },
+    "notoryx_core": {
+      "repository": "https://github.com/TheLogsAreScreaming/notoryx-core",
+      "commit": "f0a37c0f35f05645f7de43fa177d30ac40e0b1b8",
+      "usage": "product and protocol reference; no Dart code copied"
+    }
+  }
+}
+

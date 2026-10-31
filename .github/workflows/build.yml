@@ -1,0 +1,30 @@
+name: Foundation checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  host:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: cmake -S . -B build/host && cmake --build build/host
+      - run: ctest --test-dir build/host --output-on-failure
+      - run: python3 -m unittest discover -s test -p 'test_*.py'
+  firmware:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r requirements-build.txt
+      - run: pio run -e m9_foundation
+      - run: python scripts/build_report.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: build-report
+          path: build/reports/
+          if-no-files-found: error

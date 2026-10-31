@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.16)
+project(notoryx_m9_host LANGUAGES CXX)
+enable_testing()
+add_executable(foundation_tests test/foundation_tests.cpp)
+target_include_directories(foundation_tests PRIVATE include)
+target_compile_features(foundation_tests PRIVATE cxx_std_17)
+if(CMAKE_CXX_COMPILER_ID MATCHES "Clang|GNU")
+  target_compile_options(foundation_tests PRIVATE -Wall -Wextra -Werror -pedantic)
+endif()
+add_test(NAME foundation COMMAND foundation_tests)
+
